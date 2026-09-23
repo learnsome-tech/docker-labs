@@ -1,0 +1,4 @@
+linux arm64
+["/bin/sh"]
+IMAGE        CREATED       CREATED BY   SIZE      COMMENT
+...

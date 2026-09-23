@@ -1,0 +1,3 @@
+PID   COMMAND
+    1 ps
+hello from inside

@@ -1,0 +1,4 @@
+...
+lifecycle-demo
+CONTAINER ID   IMAGE         COMMAND       CREATED        STATUS        NAMES
+...           alpine:3.20  "sh -c ..."  ...            Up ...        lifecycle-demo
