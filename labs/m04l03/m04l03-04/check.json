@@ -1,0 +1,22 @@
+{
+  "lab": "m04l03-04",
+  "lesson": "m04l03",
+  "title": "Same work, one layer",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint lean.Dockerfile",
+  "main": "lean.Dockerfile",
+  "files": [
+    "fat.Dockerfile",
+    "lean.Dockerfile",
+    "run.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

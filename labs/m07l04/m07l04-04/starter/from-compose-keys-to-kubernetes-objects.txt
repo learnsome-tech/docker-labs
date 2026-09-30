@@ -1,0 +1,9 @@
+Compose                      Kubernetes
+services.api image, user     Deployment: Pod template, securityContext
+ports                        Service, and Ingress for outside traffic
+environment                  ConfigMap, read with envFrom
+secrets                      Secret, mounted as files
+healthcheck                  readinessProbe and livenessProbe
+deploy.resources.limits      resources.requests and resources.limits
+volumes                      PersistentVolumeClaim
+restart, depends_on          controllers restart; readiness gates traffic

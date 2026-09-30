@@ -1,0 +1,23 @@
+{
+  "lab": "m03l06-04",
+  "lesson": "m03l06",
+  "title": "The wrong way to hand a build a token",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint Dockerfile",
+  "main": "Dockerfile",
+  "files": [
+    "Dockerfile",
+    "leak/Dockerfile",
+    "main.go",
+    "run.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

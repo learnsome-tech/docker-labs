@@ -1,0 +1,21 @@
+{
+  "lab": "m03l03-02",
+  "lesson": "m03l03",
+  "title": "Two RUN steps give the service a user and a data directory",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint Dockerfile",
+  "main": "Dockerfile",
+  "files": [
+    "Dockerfile",
+    "app.py",
+    "run.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

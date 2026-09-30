@@ -1,0 +1,40 @@
+name: m06l02-stack
+
+services:
+  api:
+    build: .
+    image: taskapi:m06l02
+    ports:
+      - "18602:8000"
+    environment:
+      DATABASE_URL: postgres://tasks:tasks@db:5432/tasks
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: tasks
+      POSTGRES_PASSWORD: tasks
+      POSTGRES_DB: tasks
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U tasks -d tasks"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 30s
+      start_interval: 1s
+
+  migrate:
+    image: postgres:16-alpine
+    command: psql -h db -U tasks -v ON_ERROR_STOP=1 -f /schema.sql
+    environment:
+      PGPASSWORD: tasks
+    volumes:
+      - ./schema.sql:/schema.sql:ro
+    depends_on:
+      db:
+        condition: service_healthy

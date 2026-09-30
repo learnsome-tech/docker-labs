@@ -1,4 +1,0 @@
-...
-GET /health 200
-taskapi-demo
-taskapi-demo Exited (0) ... ago

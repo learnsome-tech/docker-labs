@@ -1,6 +1,0 @@
-COMMAND
-ps
-initd
-kthreadd
-pool_workqueue_
-docker-desktop

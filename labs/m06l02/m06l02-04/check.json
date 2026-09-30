@@ -1,0 +1,25 @@
+{
+  "lab": "m06l02-04",
+  "lesson": "m06l02",
+  "title": "A database check and depends_on conditions",
+  "mode": "checker",
+  "runner": "yamllint",
+  "command": "yamllint compose.yaml",
+  "main": "compose.yaml",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "race.yaml",
+    "schema.sql",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "yamllint"
+  ],
+  "note": null
+}

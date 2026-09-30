@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# What earlier panels of this lesson ran, so this one has something to work with.
+set -u
+docker build -q -t m03l06-worker . >/dev/null && docker run --rm -e QUEUE=emails m03l06-worker
+docker image ls golang:1.23-alpine
+docker image ls m03l06-worker
+docker history m03l06-worker
+docker build -q --target test -t m03l06-test .
+docker run --rm m03l06-test cat /out/vet.txt
+docker build --build-arg API_TOKEN=s3cret -t m03l06-leak leak
+API_TOKEN=s3cret docker build -q --secret id=API_TOKEN -t m03l06-safe safe
+docker run --rm m03l06-safe cat /status.txt
+docker history --no-trunc m03l06-leak | grep -c s3cret
+docker history --no-trunc m03l06-safe | grep -c s3cret
+docker run --rm m03l06-safe ls /run/secrets

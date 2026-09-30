@@ -1,0 +1,22 @@
+{
+  "lab": "m03l05-04",
+  "lesson": "m03l05",
+  "title": "ENTRYPOINT fixes the program, CMD supplies defaults",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint Dockerfile.tool",
+  "main": "Dockerfile.tool",
+  "files": [
+    "Dockerfile",
+    "Dockerfile.tool",
+    "app.py",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

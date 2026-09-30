@@ -1,0 +1,23 @@
+services:
+  api:
+    ports:
+      - "127.0.0.1:18603:8000"
+    environment:
+      APP_VERSION: dev
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./app.py
+          target: /app/app.py
+        - action: rebuild
+          path: ./Dockerfile
+
+  dbshell:
+    image: postgres:16-alpine
+    profiles: [tools]
+    entrypoint: ["psql", "-h", "db", "-U", "tasks"]
+    environment:
+      PGPASSWORD: tasks
+    depends_on:
+      db:
+        condition: service_healthy

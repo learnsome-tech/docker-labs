@@ -1,0 +1,24 @@
+{
+  "lab": "m06l03-05",
+  "lesson": "m06l03",
+  "title": "A database shell behind a profile",
+  "mode": "checker",
+  "runner": "yamllint",
+  "command": "yamllint compose.override.yaml",
+  "main": "compose.override.yaml",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.override.yaml",
+    "compose.yaml",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "yamllint"
+  ],
+  "note": null
+}

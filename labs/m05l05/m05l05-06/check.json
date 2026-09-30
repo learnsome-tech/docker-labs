@@ -1,0 +1,22 @@
+{
+  "lab": "m05l05-06",
+  "lesson": "m05l05",
+  "title": "The task API with everything unneeded taken away",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "run-locked.sh",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "run-locked.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

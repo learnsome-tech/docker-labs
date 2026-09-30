@@ -1,0 +1,21 @@
+{
+  "lab": "m03l05-02",
+  "lesson": "m03l05",
+  "title": "Stop running the service as root",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint Dockerfile",
+  "main": "Dockerfile",
+  "files": [
+    "Dockerfile",
+    "app.py",
+    "run.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

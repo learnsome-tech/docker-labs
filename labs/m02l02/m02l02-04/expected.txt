@@ -1,2 +1,0 @@
-lifecycle-demo
-alpine:3.20

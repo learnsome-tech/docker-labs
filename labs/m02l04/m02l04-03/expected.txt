@@ -1,3 +1,0 @@
-...
-{"status": "ok"}
-taskapi-demo 0.0.0.0:18080->8000/tcp

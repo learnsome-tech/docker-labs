@@ -1,0 +1,25 @@
+{
+  "lab": "m07l02-05",
+  "lesson": "m07l02",
+  "title": "The same flow as a workflow file",
+  "mode": "checker",
+  "runner": "actionlint",
+  "command": "actionlint image.yml",
+  "main": "image.yml",
+  "files": [
+    ".dockerignore",
+    ".github/workflows/image.yml",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "image.yml",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "actionlint"
+  ],
+  "note": null
+}

@@ -1,0 +1,25 @@
+{
+  "lab": "m06l04-02",
+  "lesson": "m06l04",
+  "title": "Run the suite once",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "session.sh",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "extra.sql",
+    "run.sh",
+    "seed.sql",
+    "session.sh",
+    "tests/smoke.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It needs Docker (or another container engine), which the lab sandbox does not have. Run it on a machine with Docker installed."
+}

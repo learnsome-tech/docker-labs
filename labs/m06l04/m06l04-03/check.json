@@ -1,0 +1,26 @@
+{
+  "lab": "m06l04-03",
+  "lesson": "m06l04",
+  "title": "Seed data and a test service",
+  "mode": "checker",
+  "runner": "yamllint",
+  "command": "yamllint compose.yaml",
+  "main": "compose.yaml",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "extra.sql",
+    "seed.sql",
+    "setup.sh",
+    "tests/smoke.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "yamllint"
+  ],
+  "note": null
+}

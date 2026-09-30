@@ -1,0 +1,2 @@
+CMD ["python", "app.py"]   # exec form: python is the process
+CMD python app.py           # shell form: sh -c runs python

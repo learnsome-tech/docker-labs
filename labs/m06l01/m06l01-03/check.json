@@ -1,0 +1,23 @@
+{
+  "lab": "m06l01-03",
+  "lesson": "m06l01",
+  "title": "The API service, key by key",
+  "mode": "checker",
+  "runner": "yamllint",
+  "command": "yamllint compose.yaml",
+  "main": "compose.yaml",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "yamllint"
+  ],
+  "note": null
+}

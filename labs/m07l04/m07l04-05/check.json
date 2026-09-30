@@ -1,0 +1,25 @@
+{
+  "lab": "m07l04-05",
+  "lesson": "m07l04",
+  "title": "The service as a Deployment",
+  "mode": "checker",
+  "runner": "kubeconform",
+  "command": "kubeconform -strict -summary deployment.yaml",
+  "main": "deployment.yaml",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "deployment.yaml",
+    "k8s/deployment.yaml",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "kubeconform"
+  ],
+  "note": null
+}

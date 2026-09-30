@@ -1,3 +1,0 @@
-Linux
-NAME="Alpine Linux"
-NAME="Debian GNU/Linux"

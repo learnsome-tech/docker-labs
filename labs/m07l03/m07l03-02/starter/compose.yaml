@@ -1,0 +1,39 @@
+name: m07l03-stack
+services:
+  api:
+    build: .
+    image: m07l03-api:1.0.0
+    ports: ["18703:8000"]
+    volumes: [task-data:/data]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    deploy:
+      resources:
+        limits: { cpus: "0.50", memory: 128M, pids: 64 }
+    restart: unless-stopped
+    stop_grace_period: 20s
+    depends_on:
+      db: { condition: service_healthy }
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: tasks
+      POSTGRES_DB: tasks
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+    secrets: [db_password]
+    volumes: [db-data:/var/lib/postgresql/data]
+    security_opt: [no-new-privileges:true]
+    deploy: { resources: { limits: { memory: 256M } } }
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tasks -d tasks"]
+      interval: 3s
+      retries: 10
+    restart: unless-stopped
+secrets:
+  db_password:
+    file: ./secrets/db_password.txt
+volumes:
+  task-data:
+  db-data:

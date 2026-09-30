@@ -1,6 +1,0 @@
-PID   COMMAND
-    1 sh
-   10 sleep
-ready
-UID   PID   PPID   C   STIME   TTY   TIME   CMD
-...

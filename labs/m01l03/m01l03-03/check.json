@@ -1,0 +1,21 @@
+{
+  "lab": "m01l03-03",
+  "lesson": "m01l03",
+  "title": "Filesystem layers, counted",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "session.sh",
+  "files": [
+    "Dockerfile",
+    "note.txt",
+    "run.sh",
+    "session.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It needs Docker (or another container engine), which the lab sandbox does not have. Run it on a machine with Docker installed."
+}

@@ -1,0 +1,4 @@
+# deprecated: MAINTAINER Ada <ada@example.com>
+LABEL org.opencontainers.image.authors="Ada <ada@example.com>" \
+      org.opencontainers.image.source="https://example.com/taskapi" \
+      org.opencontainers.image.revision="${GIT_COMMIT}"

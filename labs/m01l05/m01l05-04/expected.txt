@@ -1,7 +1,0 @@
-Hello from Docker!
-This message shows that your installation appears to be working correctly.
-...
- 1. The Docker client contacted the Docker daemon.
- 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
-...
-aarch64

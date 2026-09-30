@@ -1,0 +1,23 @@
+{
+  "lab": "m03l01-04",
+  "lesson": "m03l01",
+  "title": "Copy everything, and you get everything",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint ctx.Dockerfile",
+  "main": "ctx.Dockerfile",
+  "files": [
+    "Dockerfile",
+    "app.py",
+    "ctx.Dockerfile",
+    "run.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

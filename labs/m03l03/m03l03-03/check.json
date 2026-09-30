@@ -1,0 +1,23 @@
+{
+  "lab": "m03l03-03",
+  "lesson": "m03l03",
+  "title": "Shell form and exec form, side by side",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint forms.Dockerfile",
+  "main": "forms.Dockerfile",
+  "files": [
+    "Dockerfile",
+    "app.py",
+    "forms.Dockerfile",
+    "run.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

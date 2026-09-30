@@ -1,0 +1,19 @@
+{
+  "lab": "m03l02-02",
+  "lesson": "m03l02",
+  "title": "Where each file lands: WORKDIR and COPY paths",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "Dockerfile",
+  "files": [
+    "Dockerfile",
+    "app.py",
+    "run.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only."
+}

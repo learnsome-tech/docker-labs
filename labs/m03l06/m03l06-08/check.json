@@ -1,0 +1,27 @@
+{
+  "lab": "m03l06-08",
+  "lesson": "m03l06",
+  "title": "The task API's finished Dockerfile",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint Dockerfile",
+  "main": "Dockerfile",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "leak/Dockerfile",
+    "main.go",
+    "run.sh",
+    "safe/Dockerfile",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

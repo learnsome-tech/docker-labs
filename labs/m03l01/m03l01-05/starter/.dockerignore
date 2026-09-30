@@ -1,0 +1,5 @@
+# local tooling and caches
+.venv
+tmp/
+# secrets never enter the context
+.env

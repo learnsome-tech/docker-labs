@@ -1,0 +1,23 @@
+{
+  "lab": "m06l01-04",
+  "lesson": "m06l01",
+  "title": "The database service and the named volumes",
+  "mode": "checker",
+  "runner": "yamllint",
+  "command": "yamllint compose.yaml",
+  "main": "compose.yaml",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "yamllint"
+  ],
+  "note": null
+}

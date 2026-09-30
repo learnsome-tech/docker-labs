@@ -1,0 +1,24 @@
+{
+  "lab": "m03l03-04",
+  "lesson": "m03l03",
+  "title": "SHELL, and a pipe that hides a failure",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint pipe.Dockerfile",
+  "main": "pipe.Dockerfile",
+  "files": [
+    "Dockerfile",
+    "app.py",
+    "forms.Dockerfile",
+    "pipe.Dockerfile",
+    "run.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

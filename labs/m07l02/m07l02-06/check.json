@@ -1,0 +1,26 @@
+{
+  "lab": "m07l02-06",
+  "lesson": "m07l02",
+  "title": "Promotion as its own gated workflow",
+  "mode": "checker",
+  "runner": "actionlint",
+  "command": "actionlint promote.yml",
+  "main": "promote.yml",
+  "files": [
+    ".dockerignore",
+    ".github/workflows/image.yml",
+    ".github/workflows/promote.yml",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "promote.yml",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "actionlint"
+  ],
+  "note": null
+}

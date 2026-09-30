@@ -1,0 +1,3 @@
+FROM python:3.12-alpine
+FROM python:3.12-alpine@sha256:<digest>
+FROM scratch

@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# Docker Architecture & Production Containers — lesson m01l03 — Union Filesystems, Images And Writable Layers
-# https://learnsome.tech/courses/docker-course/watch?lesson=m01l03
-# © LearnSome.tech
-# What earlier panels of this lesson ran, so this one has something to work with.
-set -u
-docker build -q -t layers:demo . >/dev/null && docker image history layers:demo

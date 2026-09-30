@@ -1,0 +1,22 @@
+{
+  "lab": "m03l03-05",
+  "lesson": "m03l03",
+  "title": "How the build cache decides what to reuse",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "how-the-build-cache-decides-what-to-reuse.txt",
+  "files": [
+    "Dockerfile",
+    "app.py",
+    "forms.Dockerfile",
+    "how-the-build-cache-decides-what-to-reuse.txt",
+    "pipe.Dockerfile",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

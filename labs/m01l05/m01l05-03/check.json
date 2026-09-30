@@ -1,0 +1,19 @@
+{
+  "lab": "m01l05-03",
+  "lesson": "m01l05",
+  "title": "Both halves have to answer",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "session.sh",
+  "files": [
+    "install-docker.sh",
+    "run.sh",
+    "session.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It needs Docker (or another container engine), which the lab sandbox does not have. Run it on a machine with Docker installed."
+}

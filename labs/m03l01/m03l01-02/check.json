@@ -1,0 +1,21 @@
+{
+  "lab": "m03l01-02",
+  "lesson": "m03l01",
+  "title": "Four lines that turn the service into an image",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint Dockerfile",
+  "main": "Dockerfile",
+  "files": [
+    "Dockerfile",
+    "app.py",
+    "run.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

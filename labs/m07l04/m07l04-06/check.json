@@ -1,0 +1,26 @@
+{
+  "lab": "m07l04-06",
+  "lesson": "m07l04",
+  "title": "A stable name and the configuration",
+  "mode": "checker",
+  "runner": "kubeconform",
+  "command": "kubeconform -strict -summary service.yaml",
+  "main": "service.yaml",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "k8s/deployment.yaml",
+    "k8s/service.yaml",
+    "service.yaml",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "kubeconform"
+  ],
+  "note": null
+}

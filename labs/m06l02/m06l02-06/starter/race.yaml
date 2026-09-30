@@ -1,0 +1,19 @@
+name: m06l02-race
+
+services:
+  migrate:
+    image: postgres:16-alpine
+    command: psql -h db -U tasks -v ON_ERROR_STOP=1 -f /schema.sql
+    environment:
+      PGPASSWORD: tasks
+    volumes:
+      - ./schema.sql:/schema.sql:ro
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: tasks
+      POSTGRES_PASSWORD: tasks
+      POSTGRES_DB: tasks

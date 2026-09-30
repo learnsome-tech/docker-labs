@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: taskapi }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: taskapi } }
+  template:
+    metadata: { labels: { app: taskapi } }
+    spec:
+      securityContext: { runAsNonRoot: true, runAsUser: 10001 }
+      containers:
+        - name: api
+          image: ghcr.io/example/taskapi:4d7c1e9
+          envFrom: [{ configMapRef: { name: taskapi-config } }]
+          ports: [{ containerPort: 8000 }]
+          readinessProbe: { httpGet: { path: /health, port: 8000 } }
+          resources: { requests: { cpu: 100m, memory: 64Mi },
+                       limits: { memory: 128Mi } }
+          volumeMounts: [{ name: data, mountPath: /data }]
+      volumes:
+        - name: data
+          persistentVolumeClaim: { claimName: task-data }

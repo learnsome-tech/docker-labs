@@ -1,0 +1,24 @@
+{
+  "lab": "m04l03-05",
+  "lesson": "m04l03",
+  "title": "Compile in one stage, ship on distroless",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint go.Dockerfile",
+  "main": "go.Dockerfile",
+  "files": [
+    "fat.Dockerfile",
+    "go.Dockerfile",
+    "lean.Dockerfile",
+    "main.go",
+    "run.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

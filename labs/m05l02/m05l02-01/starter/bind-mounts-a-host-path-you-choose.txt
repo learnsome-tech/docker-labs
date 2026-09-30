@@ -1,0 +1,4 @@
+-v ./data:/data
+--mount type=bind,src=./data,dst=/data
+-v ./data:/data:ro
+--mount type=bind,src=./data,dst=/data,readonly

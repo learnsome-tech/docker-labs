@@ -1,0 +1,27 @@
+{
+  "lab": "m04l03-07",
+  "lesson": "m04l03",
+  "title": "Prove who the process is",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "session.sh",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "fat.Dockerfile",
+    "go.Dockerfile",
+    "lean.Dockerfile",
+    "main.go",
+    "run.sh",
+    "session.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It needs Docker (or another container engine), which the lab sandbox does not have. Run it on a machine with Docker installed."
+}

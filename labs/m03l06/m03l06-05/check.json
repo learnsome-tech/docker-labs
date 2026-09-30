@@ -1,0 +1,24 @@
+{
+  "lab": "m03l06-05",
+  "lesson": "m03l06",
+  "title": "The right way: a secret mount for one step",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint Dockerfile",
+  "main": "Dockerfile",
+  "files": [
+    "Dockerfile",
+    "leak/Dockerfile",
+    "main.go",
+    "run.sh",
+    "safe/Dockerfile",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

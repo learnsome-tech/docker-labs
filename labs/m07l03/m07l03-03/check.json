@@ -1,0 +1,24 @@
+{
+  "lab": "m07l03-03",
+  "lesson": "m07l03",
+  "title": "The hardened service",
+  "mode": "checker",
+  "runner": "yamllint",
+  "command": "yamllint compose.yaml",
+  "main": "compose.yaml",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "secrets/db_password.txt",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "yamllint"
+  ],
+  "note": null
+}

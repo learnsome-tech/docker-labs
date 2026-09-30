@@ -1,0 +1,7 @@
+# compose.debug.yaml: only with -f compose.yaml -f compose.debug.yaml
+services:
+  api:
+    command: ["python", "-m", "debugpy", "--listen", "0.0.0.0:5678",
+              "--wait-for-client", "app.py"]
+    ports:
+      - "127.0.0.1:5678:5678"

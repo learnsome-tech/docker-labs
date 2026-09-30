@@ -1,0 +1,41 @@
+services:
+  api:
+    build: .
+    image: taskapi:m06l04
+    environment:
+      DATABASE_URL: postgres://tasks:tasks@db:5432/tasks
+    volumes:
+      - task-data:/data
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: tasks
+      POSTGRES_PASSWORD: tasks
+      POSTGRES_DB: tasks
+    volumes:
+      - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U tasks -d tasks"]
+      interval: 5s
+      start_period: 30s
+      start_interval: 1s
+
+  test:
+    image: postgres:16-alpine
+    profiles: [test]
+    command: ["sh", "/tests/smoke.sh"]
+    environment:
+      BASE_URL: http://api:8000
+      PGPASSWORD: tasks
+    volumes:
+      - ./tests:/tests:ro
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  task-data:

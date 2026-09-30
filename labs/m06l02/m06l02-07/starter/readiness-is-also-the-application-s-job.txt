@@ -1,0 +1,10 @@
+import socket, sys, time
+
+for attempt in range(8):
+    try:
+        socket.create_connection(("db", 5432), timeout=2).close()
+        break
+    except OSError:
+        time.sleep(min(2 ** attempt, 10))
+else:
+    sys.exit("database not reachable")

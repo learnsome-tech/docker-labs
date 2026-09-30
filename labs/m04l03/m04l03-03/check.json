@@ -1,0 +1,21 @@
+{
+  "lab": "m04l03-03",
+  "lesson": "m04l03",
+  "title": "A layer that deletes nothing",
+  "mode": "checker",
+  "runner": "hadolint",
+  "command": "hadolint fat.Dockerfile",
+  "main": "fat.Dockerfile",
+  "files": [
+    "fat.Dockerfile",
+    "run.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "hadolint"
+  ],
+  "note": null
+}

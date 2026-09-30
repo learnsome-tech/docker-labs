@@ -1,0 +1,23 @@
+{
+  "lab": "m04l04-03",
+  "lesson": "m04l04",
+  "title": "Matching against advisories needs an account",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "session.sh",
+  "files": [
+    ".dockerignore",
+    "Dockerfile",
+    "app.py",
+    "compose.yaml",
+    "run.sh",
+    "session.sh",
+    "setup.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}
