@@ -29,6 +29,9 @@ In the lesson: The fix is a secret mount. The run instruction takes a mount opti
    - Line 2: mounted for this RUN only; never written to a layer
 4. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 5. Check it from the repository root: `./check m03l06-05`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l06-05 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

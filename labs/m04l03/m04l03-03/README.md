@@ -24,6 +24,9 @@ In the lesson: Here is the most common way images get fat. The second line write
    - Lines 3–4: deletes it
 3. Edit `fat.Dockerfile` and check it: `hadolint fat.Dockerfile`.
 4. Check it from the repository root: `./check m04l03-03`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m04l03-03 --command=<id>`:
+   - `lint` (Lint): `hadolint fat.Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info fat.Dockerfile`
 
 ## How to check
 

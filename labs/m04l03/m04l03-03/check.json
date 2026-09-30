@@ -17,5 +17,18 @@
   "requires": [
     "hadolint"
   ],
+  "tool": "hadolint",
+  "commands": [
+    {
+      "id": "lint",
+      "label": "Lint",
+      "line": "hadolint fat.Dockerfile"
+    },
+    {
+      "id": "strict",
+      "label": "Lint strictly",
+      "line": "hadolint --failure-threshold info fat.Dockerfile"
+    }
+  ],
   "note": null
 }

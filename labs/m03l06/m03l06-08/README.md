@@ -34,6 +34,9 @@ In the lesson: Here is the task API's reference file, which the rest of the cour
    - Line 9: explained in module six: how Docker decides the app is healthy
 4. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 5. Check it from the repository root: `./check m03l06-08`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l06-08 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

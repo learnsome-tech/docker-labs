@@ -26,6 +26,9 @@ In the lesson: Here is a four line build file, and each line is worth watching. 
    - Lines 4: records a default command
 3. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 4. Check it from the repository root: `./check m01l03-02`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m01l03-02 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

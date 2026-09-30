@@ -33,6 +33,9 @@ In the lesson: The database gets the same treatment where it can take it. Instea
    - Line 18: kept out of the image by .dockerignore
 4. Edit `compose.yaml` and check it: `yamllint compose.yaml`.
 5. Check it from the repository root: `./check m07l03-04`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m07l03-04 --command=<id>`:
+   - `lint` (Lint): `yamllint -d relaxed compose.yaml`
+   - `strict` (Lint strictly): `yamllint compose.yaml`
 
 ## How to check
 

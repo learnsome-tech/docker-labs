@@ -35,6 +35,9 @@ In the lesson: Here is the same service as module six left it, with the controls
    - Line 16: time between the stop signal and the kill signal
 4. Edit `compose.yaml` and check it: `yamllint compose.yaml`.
 5. Check it from the repository root: `./check m07l03-03`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m07l03-03 --command=<id>`:
+   - `lint` (Lint): `yamllint -d relaxed compose.yaml`
+   - `strict` (Lint strictly): `yamllint compose.yaml`
 
 ## How to check
 

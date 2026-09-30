@@ -28,6 +28,9 @@ In the lesson: Cmd and entrypoint are easy to confuse, so here is a tiny image t
    - Line 3: appended to ENTRYPOINT; replaced by arguments to docker run
 4. Edit `Dockerfile.tool` and check it: `hadolint Dockerfile.tool`.
 5. Check it from the repository root: `./check m03l05-04`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l05-04 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile.tool`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile.tool`
 
 ## How to check
 

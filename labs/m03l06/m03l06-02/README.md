@@ -28,6 +28,9 @@ In the lesson: The course ships a tiny Go task worker that prints which queue it
    - Line 10: only this file crosses from the build stage
 4. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 5. Check it from the repository root: `./check m03l06-02`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l06-02 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

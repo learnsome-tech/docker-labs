@@ -30,6 +30,9 @@ In the lesson: Here is the task API file, with four new kinds of line. The first
    - Line 10: copies a build-time value into the runtime environment
 4. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 5. Check it from the repository root: `./check m03l04-02`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l04-02 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

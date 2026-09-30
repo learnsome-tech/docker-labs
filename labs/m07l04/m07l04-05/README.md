@@ -36,6 +36,9 @@ In the lesson: Here is the task service as a Deployment. It asks for one copy, a
    - Line 16: Kubernetes ignores the image's HEALTHCHECK
 4. Edit `deployment.yaml` and check it: `kubeconform -strict -summary deployment.yaml`.
 5. Check it from the repository root: `./check m07l04-05`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m07l04-05 --command=<id>`:
+   - `validate` (Validate): `kubeconform -strict -summary deployment.yaml`
+   - `verbose` (Validate each resource): `kubeconform -strict -verbose -summary deployment.yaml`
 
 ## How to check
 

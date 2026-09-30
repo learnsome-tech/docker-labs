@@ -29,6 +29,9 @@ In the lesson: Further down, the override adds a second service: a database shel
    - Lines 5–9: waits for the database
 3. Edit `compose.override.yaml` and check it: `yamllint compose.override.yaml`.
 4. Check it from the repository root: `./check m06l03-05`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m06l03-05 --command=<id>`:
+   - `lint` (Lint): `yamllint -d relaxed compose.override.yaml`
+   - `strict` (Lint strictly): `yamllint compose.override.yaml`
 
 ## How to check
 

@@ -22,5 +22,13 @@
   "requires": [
     "actionlint"
   ],
+  "tool": "actionlint",
+  "commands": [
+    {
+      "id": "lint",
+      "label": "Lint",
+      "line": "actionlint promote.yml"
+    }
+  ],
   "note": null
 }

@@ -26,6 +26,9 @@ In the lesson: Now the opposite extreme, and the one you will meet in real proje
    - Lines 2: copies the whole context
 3. Edit `ctx.Dockerfile` and check it: `hadolint ctx.Dockerfile`.
 4. Check it from the repository root: `./check m03l01-04`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l01-04 --command=<id>`:
+   - `lint` (Lint): `hadolint ctx.Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info ctx.Dockerfile`
 
 ## How to check
 

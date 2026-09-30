@@ -30,6 +30,9 @@ In the lesson: Module three introduced multi stage builds; here they pay for the
    - Line 8: distroless ships a nonroot user, uid 65532
 4. Edit `go.Dockerfile` and check it: `hadolint go.Dockerfile`.
 5. Check it from the repository root: `./check m04l03-05`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m04l03-05 --command=<id>`:
+   - `lint` (Lint): `hadolint go.Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info go.Dockerfile`
 
 ## How to check
 

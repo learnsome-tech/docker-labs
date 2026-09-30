@@ -28,6 +28,9 @@ In the lesson: The add instruction looks like copy with extra powers, and the po
    - Lines 4: add instruction
 3. Edit `add.Dockerfile` and check it: `hadolint add.Dockerfile`.
 4. Check it from the repository root: `./check m03l02-05`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l02-05 --command=<id>`:
+   - `lint` (Lint): `hadolint add.Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info add.Dockerfile`
 
 ## How to check
 

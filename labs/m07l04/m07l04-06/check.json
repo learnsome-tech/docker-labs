@@ -22,5 +22,18 @@
   "requires": [
     "kubeconform"
   ],
+  "tool": "kubeconform",
+  "commands": [
+    {
+      "id": "validate",
+      "label": "Validate",
+      "line": "kubeconform -strict -summary service.yaml"
+    },
+    {
+      "id": "verbose",
+      "label": "Validate each resource",
+      "line": "kubeconform -strict -verbose -summary service.yaml"
+    }
+  ],
   "note": null
 }

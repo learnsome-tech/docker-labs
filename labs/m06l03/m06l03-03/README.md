@@ -32,6 +32,9 @@ In the lesson: The override is a fragment, not a complete service: it names the 
    - Line 9: copy the file in, then restart the container
 4. Edit `compose.override.yaml` and check it: `yamllint compose.override.yaml`.
 5. Check it from the repository root: `./check m06l03-03`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m06l03-03 --command=<id>`:
+   - `lint` (Lint): `yamllint -d relaxed compose.override.yaml`
+   - `strict` (Lint strictly): `yamllint compose.override.yaml`
 
 ## How to check
 

@@ -21,5 +21,13 @@
   "requires": [
     "actionlint"
   ],
+  "tool": "actionlint",
+  "commands": [
+    {
+      "id": "lint",
+      "label": "Lint",
+      "line": "actionlint image.yml"
+    }
+  ],
   "note": null
 }

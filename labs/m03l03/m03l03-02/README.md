@@ -28,6 +28,9 @@ In the lesson: The service Dockerfile grows by two run steps. The first creates 
    - Line 2: no password, fixed user ID 10001
 4. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 5. Check it from the repository root: `./check m03l03-02`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l03-02 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

@@ -28,6 +28,9 @@ In the lesson: This is the four line Dockerfile behind the image you ran at the 
    - Line 3: source is relative to the context, the dot is the working directory
 4. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 5. Check it from the repository root: `./check m03l01-02`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l01-02 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

@@ -30,6 +30,9 @@ In the lesson: The database service has no build key, only an image, so Compose 
    - Line 5: fine for a laptop; module seven moves it into a secret
 4. Edit `compose.yaml` and check it: `yamllint compose.yaml`.
 5. Check it from the repository root: `./check m06l01-04`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m06l01-04 --command=<id>`:
+   - `lint` (Lint): `yamllint -d relaxed compose.yaml`
+   - `strict` (Lint strictly): `yamllint compose.yaml`
 
 ## How to check
 

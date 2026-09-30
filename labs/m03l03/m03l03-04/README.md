@@ -28,6 +28,9 @@ In the lesson: A shell reports only the last command's result for a pipe, and th
    - Lines 4: same pipe again
 3. Edit `pipe.Dockerfile` and check it: `hadolint pipe.Dockerfile`.
 4. Check it from the repository root: `./check m03l03-04`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l03-04 --command=<id>`:
+   - `lint` (Lint): `hadolint pipe.Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info pipe.Dockerfile`
 
 ## How to check
 

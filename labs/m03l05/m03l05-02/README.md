@@ -30,6 +30,9 @@ In the lesson: Without a user instruction, everything in a container runs as roo
    - Line 11: every later RUN, and the container, run as app
 4. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 5. Check it from the repository root: `./check m03l05-02`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l05-02 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

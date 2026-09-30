@@ -26,6 +26,9 @@ In the lesson: Builds often need a credential, such as a token for a private pac
    - Lines 3: checks that it arrived
 3. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 4. Check it from the repository root: `./check m03l06-04`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l06-04 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

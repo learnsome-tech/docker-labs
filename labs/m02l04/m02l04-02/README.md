@@ -24,6 +24,9 @@ In the lesson: Here is the small service that carries us through the rest of the
 2. Read `Dockerfile`.
 3. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 4. Check it from the repository root: `./check m02l04-02`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m02l04-02 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 

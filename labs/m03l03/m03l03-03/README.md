@@ -27,6 +27,9 @@ In the lesson: To see the difference between the two forms, make each one create
    - Lines 4: exec form
 3. Edit `forms.Dockerfile` and check it: `hadolint forms.Dockerfile`.
 4. Check it from the repository root: `./check m03l03-03`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l03-03 --command=<id>`:
+   - `lint` (Lint): `hadolint forms.Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info forms.Dockerfile`
 
 ## How to check
 

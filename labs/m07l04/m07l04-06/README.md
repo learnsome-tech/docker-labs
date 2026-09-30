@@ -33,6 +33,9 @@ In the lesson: Three small objects complete the picture, in one file separated b
    - Line 6: port 80 inside the cluster, forwarded to 8000
 4. Edit `service.yaml` and check it: `kubeconform -strict -summary service.yaml`.
 5. Check it from the repository root: `./check m07l04-06`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m07l04-06 --command=<id>`:
+   - `validate` (Validate): `kubeconform -strict -summary service.yaml`
+   - `verbose` (Validate each resource): `kubeconform -strict -verbose -summary service.yaml`
 
 ## How to check
 

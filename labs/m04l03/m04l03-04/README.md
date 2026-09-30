@@ -24,6 +24,9 @@ In the lesson: The fix is to create and remove temporary files in the same instr
    - Lines 1–3: same instruction
 3. Edit `lean.Dockerfile` and check it: `hadolint lean.Dockerfile`.
 4. Check it from the repository root: `./check m04l03-04`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m04l03-04 --command=<id>`:
+   - `lint` (Lint): `hadolint lean.Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info lean.Dockerfile`
 
 ## How to check
 

@@ -33,6 +33,9 @@ In the lesson: The API's dependencies now use the long form. It waits for the da
    - Line 14: over the network, the way clients connect
 4. Edit `compose.yaml` and check it: `yamllint compose.yaml`.
 5. Check it from the repository root: `./check m06l02-04`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m06l02-04 --command=<id>`:
+   - `lint` (Lint): `yamllint -d relaxed compose.yaml`
+   - `strict` (Lint strictly): `yamllint compose.yaml`
 
 ## How to check
 

@@ -32,6 +32,9 @@ In the lesson: The build file has carried a health check since it was added in m
    - Line 10: exit 0 healthy, 1 unhealthy; 2 is reserved
 4. Edit `Dockerfile` and check it: `hadolint Dockerfile`.
 5. Check it from the repository root: `./check m06l02-03`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m06l02-03 --command=<id>`:
+   - `lint` (Lint): `hadolint Dockerfile`
+   - `strict` (Lint strictly): `hadolint --failure-threshold info Dockerfile`
 
 ## How to check
 
